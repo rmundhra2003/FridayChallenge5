@@ -1,0 +1,113 @@
+body {
+    background-color:#F5F5DC;
+    background-image: url("/static/img/background2.jpg");
+}
+
+h1 {
+    color:whitesmoke;
+    text-align:center;
+    font-size: 30px;
+}
+
+h3{
+    color: whitesmoke;
+    text-align:center;
+}
+ul {
+    color: whitesmoke;
+    text-align:center;
+    /*background: #3399ff;*/
+    /*padding: 20px;*/
+}
+ul li {
+    color: navajowhite;
+    text-align:center;
+    background: darkolivegreen;
+    margin: 8px;
+    font-size: x-large;
+    list-style: none;
+}
+nav {
+    color:whitesmoke;
+    text-align:center;
+    margin-bottom: 20px;
+}
+nav li{
+    list-style-type: none;
+    color:navajowhite;
+}
+
+
+p {
+    font-family: verdana;
+    font-size: 15px;
+    color:white;
+    padding:30px;
+}
+img{
+    width: 400px;
+}
+
+a {
+    color:papayawhip;
+    font-size: 25px;
+}
+
+span{
+    margin-top: 15px;
+}
+
+#moreblogs{
+    padding: 30px;
+}
+
+#moreblogs div{
+    color: whitesmoke;
+}
+
+/*#oopimg{*/
+    /*text-align: center;*/
+/*}*/
+
+#main-content{
+    padding-top: 30px;
+}
+
+#github-img{
+    padding-top: 90px;
+}
+
+.container{
+    margin-bottom: 35px;
+}
+
+.icon-img{
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+}
+
+.whitesmoke-font{
+    color: whitesmoke;
+}
+
+.blog-card{
+    margin: 10px;
+    color: whitesmoke;
+}
+
+/*.blog-card div {*/
+/*    background-color: whitesmoke;*/
+/*}*/
+
+.blog-card p{
+    color: whitesmoke;
+}
+
+.author_date{
+    color: whitesmoke;
+}
+
+.btn-olive{
+    background-color: darkolivegreen;
+}

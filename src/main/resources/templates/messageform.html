@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Twitter Like Application - Friday Weekly Challenge 5</title>
+</head>
+<body bgcolor="#E6E6FA">
+<h2><b>Twitter Like Application - Friday Weekly Challenge 5</b></h2>
+<div th:replace="base :: nav"></div>
+<form action="#"
+      th:action="@{/process}"
+      th:object="${message}"
+      method="POST">
+    <input type="hidden" th:field="*{id}" />
+    Message Title: <input type="text" th:field="*{title}" />
+    <span th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span> <br/>
+
+    User:
+    <select name="user" id="user" class="custom-select" th:field="*{user}">
+        <option value="">Select User</option>
+        <option th:each="user : ${users}"
+                th:value="${user.id}"
+                th:text="${user.firstName}"/>
+    </select><br/>
+
+    Content: <textarea rows="3" th:field="*{content}"/>
+    <span th:if="${#fields.hasErrors('content')}" th:errors="*{content}"></span> <br/>
+    <br/>
+
+    Date: <input type="text" th:field="*{date}" >
+    <span th:if="${#fields.hasErrors('date')}" th:errors="*{date}"></span> <br/>
+    <br/>
+    <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
